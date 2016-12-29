@@ -1,0 +1,60 @@
+<!--
+    Copyright 2015 Yota Devices LLC, Russia
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yotadevices.samples.hello">
+
+    <application
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/AppTheme" >
+
+        <!--
+            Adding YotaDevices SDK library. You need it to use the YotaPhone Epd screen features.
+            The 'android:required' parameter specifies whether this library is required for the
+            application. If this parameter is true, the application will not start without this
+            library and will work only on YotaPhone.
+        -->
+        <uses-library
+            android:name="com.yotadevices.sdk"
+            android:required="false"/>
+
+        <!-- Main activity, which is shown first on color screen. -->
+        <activity
+            android:name="com.yotadevices.samples.hello.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Epd activity, which is shown on Epd screen. -->
+        <activity android:name="com.yotadevices.samples.hello.EpdActivity"
+            android:label="@string/app_name"
+            android:theme="@style/EpdTheme">
+
+            <!-- This activity only for Epd screen. -->
+            <meta-data
+                android:name="com.yotadevices.keep_on_epd_screen"
+                android:value="true" />
+
+        </activity>
+
+    </application>
+</manifest>
