@@ -16,7 +16,6 @@
     limitations under the License.
 -->
 
-<!-- For a BSActivity you can use regular layout files as for regular Activity. -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/root_view"
@@ -36,7 +35,7 @@
         android:text="@string/hello_yota_phone"
         android:gravity="center" />
 
-    <!-- Button for close Epd Activity -->
+    <!-- Button to close EpdActivity -->
     <Button
         android:id="@+id/back_button"
         android:layout_width="wrap_content"

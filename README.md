@@ -1,5 +1,5 @@
 # SDK-Samples
-The repository includes several sample projects that shown how to create apps for YotaPhone.
+The repository includes several sample projects which show how to create apps for YotaPhone.
 
 ### License
 ```Text

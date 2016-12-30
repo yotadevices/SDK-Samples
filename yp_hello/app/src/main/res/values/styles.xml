@@ -25,7 +25,7 @@
         <item name="android:colorAccent">@color/colorAccent</item>
     </style>
 
-    <!-- Theme for Epd Activity -->
+    <!-- Theme for EpdActivity -->
     <style name="EpdTheme" parent="@android:style/Theme.Material.Light">
         <item name="android:windowBackground">@android:color/white</item>
         <item name="android:textColorPrimary">@android:color/white</item>
